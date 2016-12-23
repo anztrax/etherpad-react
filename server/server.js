@@ -12,6 +12,7 @@ app.use((req, res) => {
     </head>
     <body>
       <div id="react-view"></div>
+      <h1>Etherpad react</h1>
       <script type="application/javascript" src="/bundle.js"></script>
     </body>
   </html>
