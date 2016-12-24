@@ -1,8 +1,16 @@
 import express from 'express';
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+import { RoutingContext, match } from 'react-router';
+import createLocation from 'history/lib/createLocation';
+import routes from '../shared/routes';
+
 
 const app = express();
-
 app.use((req, res) => {
+  const history = createHistory();
+  const location = history.location;
+
   const HTML = `
   <!DOCTYPE html>
   <html>
