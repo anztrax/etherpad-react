@@ -38,3 +38,7 @@ jspm_packages
 
 #idea
 .idea
+
+#bundle
+public/bundle.js
+server.bundle.js
